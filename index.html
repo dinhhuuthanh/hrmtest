@@ -1,0 +1,1986 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>    list users
+</title>
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="1kLCGs7sbqJRIQ47Q3kMBZ4h42YVGhZTnG9Pw56I">
+        <link rel="shortcut icon" type="image/png" href="/common/img/favicon.png" id="favicon" data-original-href="/common/img/favicon.png">
+        <!-- Styles -->
+        <!-- Google Font: Source Sans Pro -->
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"> -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="/common/plugins/fontawesome-free/css/all.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="/common/dist/css/adminlte.min.css">
+        <!-- Custom style -->
+        <link rel="stylesheet" href="/common/css/styles.css">
+            </head>
+    <body>
+        <div class="wrapper">
+            <!-- Nav bar -->
+            
+
+            <!-- Main Sidebar Container -->
+            
+
+            <!-- Content Wrapper. Contains page content -->
+                <div class="container-fluid p-0">
+        <!-- Header -->
+        <div class="bg-header h-160">
+            <div class="container">
+                <div class="row mr-0 d-flex align-items-center pt-2" style="margin: 15px 0px 15px;">
+                    <div class="col-6 col-lg-4">
+                        <a href="http://localhost:60180">
+                            <img src="/common\images\logo.png" class="" width="150" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 col-6 text-right ml-auto">
+                        <a href="/settings" class="text-danger setting-btn">
+                            <span class="fas fa-user-circle"></span>
+                            <p class="mb-0">設定</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-12 col-md-3"></div>
+                    <div class="col-12 col-md-6">
+                        <!-- Input search -->
+                        <div class="input-group mb-3 dropdown">
+                            <input type="text" class="form-control input-search dropdown-toggle" placeholder="検索"
+                                   aria-label="Search"
+                                   id="dropdownMenuLink"
+                                   aria-describedby="button-addon2" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false" readonly>
+                            <button type="button" name="button" class="btn btn-white btn-round btn-search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="dropdown-menu w-100 container-search-form" aria-labelledby="dropdownMenuLink">
+                                <div class="">
+                                    <form action="" id="search-form" class="search-form">
+                                        <div class="form-group">
+                                            <div>
+                                                <label for="free-word">フリーワー</label>
+                                                <input type="text" class="form-control" id="free-word" name="free-word"
+                                                       aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div>
+                                                <label for="department">所属</label>
+                                                <select class="custom-select" name="department">
+                                                                                                            <option value="0">取締役</option>
+                                                                                                            <option value="1">経営企画グルー</option>
+                                                                                                            <option value="2">浜松</option>
+                                                                                                            <option value="3">名古屋</option>
+                                                                                                            <option value="4">三河</option>
+                                                                                                            <option value="5">法人部</option>
+                                                                                                            <option value="6">取締役</option>
+                                                                                                            <option value="7">経営企画グルー</option>
+                                                                                                            <option value="8">浜松</option>
+                                                                                                            <option value="9">名古屋</option>
+                                                                                                            <option value="10">三河</option>
+                                                                                                            <option value="11">法人部</option>
+                                                                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label style="padding-left: 20px">所属</label>
+                                            <div class="row">
+                                                <div class="col-2"></div>
+                                                <div class="col-md-12 col-10">
+                                                    <div class="container-character-color">
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxred"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="赤">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="red"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxyellow"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="黄">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="yellow"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxblue"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="青">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="blue"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxgray"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="灰">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="gray"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxpurple"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="紫">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="purple"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                                    <div class="form-check form-check-inline">
+                                                                <div class="d-block">
+                                                                    <div>
+                                                                        <label class="form-check-label"
+                                                                               for="inlineCheckboxpink"
+                                                                               data-trigger="hover"
+                                                                               data-container="body"
+                                                                               data-toggle="popover"
+                                                                               data-placement="top"
+                                                                               data-content="桃">
+                                                                            <div
+                                                                                class="progress mb-1 form-check_lable rounded-circle form-check_lable-hover"
+                                                                                style="">
+                                                                                <div class="progress-bar progress-color"
+                                                                                     role="progressbar"
+                                                                                     style="width: 100%"
+                                                                                     aria-valuenow="100"
+                                                                                     aria-valuemin="0"
+                                                                                     data-color="pink"
+                                                                                     aria-valuemax="100">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="character-container">
+                                                                        
+                                                                        <label class="custom-control material-checkbox">
+                                                                            <input type="checkbox"
+                                                                                   class="material-control-input">
+                                                                            <span
+                                                                                class="material-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                            </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex d-sm-none">
+                                                <button type="button" class="btn mx-auto btn-custom-color ">検索
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Input search -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--./ Header -->
+        <!-- Menu -->
+        <div class="container mb-3 container-menu">
+            <div class="menu-content">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="menu ">
+                            <div class="menu-item menu-item_active"><span class="menu-item_link">すべて</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">取締役</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">経営企画グルー</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">浜松</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">名古屋</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">三河</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">法人部</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">取締役</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">経営企画グルー</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">浜松</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">名古屋</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">三河</span></div>
+                                                            <div class="menu-item"><span class="menu-item_link">法人部</span></div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Menu -->
+        <!-- List User -->
+        <div class="container">
+            <div class="row user-container">
+
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser1"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser1" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser1" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb1"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/1"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo1" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo1"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/1" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb1">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser2"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser2" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser2" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb2"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/2"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo2" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo2"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/2" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb2">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser3"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser3" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser3" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb3"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/3"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo3" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo3"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/3" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb3">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser4"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser4" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser4" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb4"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/4"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo4" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo4"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/4" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb4">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser5"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser5" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser5" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb5"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/5"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo5" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo5"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/5" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb5">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser6"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser6" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser6" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb6"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/6"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo6" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo6"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/6" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb6">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser7"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser7" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser7" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb7"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/7"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo7" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo7"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/7" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb7">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser8"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser8" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser8" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb8"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/8"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo8" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo8"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/8" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb8">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="card user-card">
+                            <div class="card-body">
+                                <div class="user-card-info row ">
+
+                                    <!-- carousel avatar -->
+                                    <div class="col-md-12 col-sm-12 col-4">
+                                        <div id="carouselUser9"
+                                             class="carousel user-card_carousel slide position-relative"
+                                             data-ride="carousel"
+                                             data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100"
+                                                         src="https://www.w3schools.com/w3css/img_avatar3.png"
+                                                         alt="First slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                         src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+                                                         alt="Second slide">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselUser9" role="button"
+                                               data-slide="prev">
+                                                <h1><i class="fa fa-caret-left text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselUser9" role="button"
+                                               data-slide="next">
+                                                <h1><i class="fa fa-caret-right text-dark" aria-hidden="true"></i></h1>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- ./carousel avatar -->
+                                    <!-- info user -->
+                                    <div class="user-card_content align-self-sm-end col-md-12 col-sm-12 col-8">
+                                        <div data-toggle="collapse"
+                                             href="#collapseMoreInfoMb9"
+                                             aria-expanded="false">
+                                            <div class="user-name w-100 text-center align-items-end">
+                                                <a href="/detail/9"
+                                                   class="user-name-detail">まるまる太郎</a>
+                                                <div class="user-name_collapse"
+                                                >まるまる太郎</div>
+                                            </div>
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex user-item">
+                                                <span class="user-card_icon fas fa-bed"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                            <div class="user-item d-none d-lg-flex">
+                                                <span class="user-card_icon fas fa-user-tag"></span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="collapseMoreInfo9" class="collapse user-collapse_pc">
+                                                <div class="d-flex  user-item">
+                                                    <span class="user-card_icon fas fa-taxi"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+
+                                                <div class="d-flex user-item">
+                                                    <span class="user-card_icon fas fa-bed"></span>
+                                                    <p>名古屋オフィス</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="user-card_button" data-toggle="collapse"
+                                                href="#collapseMoreInfo9"
+                                                role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                                <span>
+                                                    ↓もっと見る
+                                                </span>
+                                            </div>
+                                            <a href="/detail/9" class="btn user-detail_btn-mb"
+                                               role="button">検索する</a>
+                                        </div>
+                                        <!-- ./More info -->
+                                    </div>
+                                    <!-- ./info user -->
+                                </div>
+
+                                <div class="row d-md-none">
+
+                                    <!-- More info MB -->
+                                    <div class="col-12 mt-3">
+                                        <div class=" user-more-info-mb collapse" id="collapseMoreInfoMb9">
+                                            <div class="d-flex user-item pb-2">
+                                                <span class="character-span_mb">キャラクター</span>
+                                                <div class="user-progress">
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress mb-1" data-trigger="hover"
+                                                         data-container="body" data-toggle="popover"
+                                                         data-placement="left" data-content="Yellow">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             style="width: 75%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="progress" data-trigger="hover" data-container="body"
+                                                         data-toggle="popover" data-placement="left"
+                                                         data-content="Yellow">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             style="width: 45%" aria-valuenow="100" aria-valuemin="0"
+                                                             aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex user-item w-100">
+                                                <span class="user-card_icon fas fa-user"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+
+                                            <div class="d-flex  user-item w-100">
+                                                <span class="user-card_icon fas fa-taxi"></span>
+                                                <p>名古屋オフィス</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <!-- ./List User -->
+
+            <!-- Back to top button -->
+            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+
+            <!-- /.content-wrapper -->
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery -->
+        <script src="/common/plugins/jquery/jquery.min.js"></script>
+                <!-- AdminLTE App -->
+        <script src="/common/dist/js/adminlte.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="/common/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- infinite-scroll -->
+    <script src="/common/plugins/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
+            <script>
+        //change text read more
+        $('.user-card_button').click(function () {
+            //get value aria-expanded
+            var ariaExpanded = $(this).attr('aria-expanded');
+            if (ariaExpanded == 'false') {
+                $(this).children().text('↑たたむ');
+            } else {
+                $(this).children().text('↓もっと見る');
+            }
+        });
+        $("[data-toggle=popover]").popover();
+
+        // if carousel-inner has 1 carousel-item, hide carousel-control next
+        $('.carousel-inner').each(function () {
+            if ($(this).children().length == 1) {
+                $(this).parent().find('.carousel-control-next').hide();
+            }
+        });
+
+        // handle input search
+        $.fn.materializeInputs = function (selectors) {
+
+            // default param with backwards compatibility
+            if (typeof (selectors) === 'undefined') selectors = "input, textarea, select";
+
+            // attribute function
+            function setInputValueAttr(element) {
+                element.setAttribute('value', element.value);
+            }
+
+            // set value attribute at load
+            this.find(selectors).each(function () {
+                setInputValueAttr(this);
+            });
+
+            // on keyup and change
+            this.on("keyup change", selectors, function () {
+                setInputValueAttr(this);
+            });
+        };
+
+        /**
+         * Material Inputs
+         */
+        $('body').materializeInputs();
+
+        // back to top
+        //Get the button
+        let btnBackTop = $("#btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 20) {
+                btnBackTop.fadeIn();
+            } else {
+                btnBackTop.fadeOut();
+            }
+        });
+
+        // When the user clicks on the button, scroll to the top of the document
+        btnBackTop.click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        });
+
+        // add animation progress bar
+
+
+        // drag to scroll menu left and right
+        var isDown = false;
+        var startX;
+        var scrollLeft;
+        $('.menu').on('mousedown', function (e) {
+            isDown = true;
+            startX = e.pageX - $(this).offset().left;
+            scrollLeft = $(this).scrollLeft();
+        });
+        $('.menu').on('mouseleave', function () {
+            isDown = false;
+        });
+        $('.menu').on('mouseup', function () {
+            isDown = false;
+        });
+        $('.menu').on('mousemove', function (e) {
+            if (!isDown) return;
+            e.preventDefault();
+            var x = e.pageX - $(this).offset().left;
+            var walk = (x - startX) * 2;
+            $(this).scrollLeft(scrollLeft - walk);
+        });
+        //infinite scroll
+        let $container = $('.user-container').infiniteScroll({
+            append: '.user-item',
+            history: false,
+            status: '.scroller-status',
+            scrollThreshold: 400,
+        });
+        $container.on('load.infiniteScroll', function (event, body) {
+            // compile body data into HTML
+            let itemsHTML = body.map(getItemHTML).join('');
+            // convert HTML string into elements
+            let $items = $(itemsHTML);
+            // append item elements
+            $container.infiniteScroll('appendItems', $items);
+        });
+
+
+        // set background for progress-color
+        $('.progress-color').each(function () {
+            let color = $(this).attr('data-color');
+            $(this).css('background-color', color);
+        });
+
+        // when click button user-detail_btn-mb prevent event collapse
+        $('.user-detail_btn-mb').click(function (e) {
+            e.stopPropagation();
+        });
+
+    </script>
+
+    </body>
+</html>
